@@ -31,12 +31,12 @@ to install it run this commands
 ```bash
 docker build -t image-name .
 ```
-#If you want pull image to docker hub
+If you want pull image to docker hub
 
 ```bash
 docker push -account-name/repo-name:image-tag
 ```
-#If you want pull image to gcr
+If you want pull image to gcr
 
 ```bash
 docker tag image-tag gcr.io/project-id/image-name
