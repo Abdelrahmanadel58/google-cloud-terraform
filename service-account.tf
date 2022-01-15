@@ -4,16 +4,26 @@ resource "google_service_account" "gke" {
   display_name = "service-acount-for-gke-project"
 }
 
-resource "google_service_account_iam_binding" "admin-account-iam" {
-  service_account_id = google_service_account.gke.id
-  role               = "roles/owner"
-  depends_on = [
-     google_service_account.gke
-  ]
+# resource "google_service_account_iam_binding" "admin-account-iam" {
+#   service_account_id = google_service_account.gke.id
+#   role               = "roles/owner"
+#   depends_on = [
+#      google_service_account.gke
+#   ]
 
-  members = [
-    "serviceAccount:${google_service_account.gke.email}",
-  ]
+#   members = [
+#     "serviceAccount:${google_service_account.gke.email}",
+#   ]
+# }
+resource "google_project_iam_binding" "gkeeee" {
+ project = var.account_id
+ role = "roles/container.admin"
+ depends_on = [
+ google_service_account.gke
+ ]
+ members = [
+ "serviceAccount:${google_service_account.gke.email}"
+ ]
 }
 
 
@@ -23,17 +33,17 @@ resource "google_service_account" "vm" {
   display_name = "service-acount-for-vm-project"
 }
 
-resource "google_service_account_iam_binding" "admin-account-iam-vm" {
-  service_account_id = google_service_account.vm.id
-  role               = "roles/owner"
-  depends_on = [
-     google_service_account.vm
-  ]
+# resource "google_service_account_iam_binding" "admin-account-iam-vm" {
+#   service_account_id = google_service_account.vm.id
+#   role               = "roles/owner"
+#   depends_on = [
+#      google_service_account.vm
+#   ]
 
-  members = [
-    "serviceAccount:${google_service_account.vm.email}",
-  ]
-}
+#   members = [
+#     "serviceAccount:${google_service_account.vm.email}",
+#   ]
+# }
 resource "google_project_iam_binding" "vm1" {
  project = var.account_id
  role = "roles/container.admin"

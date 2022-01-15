@@ -10,8 +10,8 @@ resource "google_container_cluster" "primary" {
 
 
   ip_allocation_policy{
-    cluster_ipv4_cidr_block = "10.2.0.0/16"
-    services_ipv4_cidr_block = "10.3.0.0/16"
+    cluster_ipv4_cidr_block = "10.3.0.0/16"
+    services_ipv4_cidr_block = "10.4.0.0/16"
 }
 
   private_cluster_config {
@@ -25,7 +25,7 @@ resource "google_container_cluster" "primary" {
 
   master_authorized_networks_config {
     cidr_blocks {
-      cidr_block = "10.0.0.0/16"
+      cidr_block = "10.1.0.0/16"
       display_name = "access-cluster-with-subnet-management"
     }
   }

@@ -9,6 +9,7 @@ resource "google_compute_firewall" "firewall" {
   source_ranges = [
         "35.235.240.0/20"
   ]
+  direction = "INGRESS"
 
-  
+  target_tags = ["foo"]
 }

@@ -1,6 +1,6 @@
 resource "google_compute_instance" "management" {
   name         = "vm-management"
-  machine_type = "n1-standard-1"
+  machine_type = "e2-small"
   zone         = "us-central1-b"
 
   tags = ["foo", "bar"]
@@ -10,6 +10,9 @@ resource "google_compute_instance" "management" {
       image = "debian-cloud/debian-9"
     }
   }
+  depends_on = [
+    google_project_iam_binding.vm1
+  ]
 
   // Local SSD disk
   # scratch_disk {

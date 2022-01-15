@@ -1,6 +1,6 @@
 resource "google_compute_subnetwork" "private" {
   name          = "management"
-  ip_cidr_range = "10.0.0.0/16"
+  ip_cidr_range = "10.1.0.0/16"
   region        = var.region
   network       = google_compute_network.vpc_network.id
 }
@@ -8,7 +8,7 @@ resource "google_compute_subnetwork" "private" {
 # restricted
 resource "google_compute_subnetwork" "restricted" {
   name          = "restricted"
-  ip_cidr_range = "10.1.0.0/16"
+  ip_cidr_range = "10.2.0.0/16"
   region        = var.region
   network       = google_compute_network.vpc_network.id
 }
