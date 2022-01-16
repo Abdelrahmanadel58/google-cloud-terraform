@@ -1,14 +1,13 @@
 # About Project
 1-vpc
-<br />
-2-subnets
-<br />
-  a-
-  <br />
+<ul>
+<li>
+<h3>2-subnets
+<p>a-
     • NAT gateway
-    <br />
-    • Private VM
-    <br />
+    • Private VM</p>
+
+  
   b-
     Private standard GKE cluster
     
