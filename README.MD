@@ -2,9 +2,9 @@
 1-vpc
 <h4>2-subnets</h4>
 <ul>
-<li><p>a-
-    • NAT gateway
-    • Private VM</p>
+<li><p>a-<br>
+    • NAT gateway<br>
+    • Private VM</p><br>
 </ul>
 
   
