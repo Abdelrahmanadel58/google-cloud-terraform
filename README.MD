@@ -9,17 +9,17 @@ project google cloud terraform with docker
     <p>a-</p><br>
         <ul>
             <li>
-                NAT gateway<br>
+                <p>NAT gateway</p><br>
             </li>
             <li?
-                Private VM</p><br>
+                <p>Private VM</p><br>
             </li>
         </ul>
 </ul>
 <ul>  
     <p>b-</p><br>
         <li>
-            Private standard GKE cluster</pre>
+            <p>Private standard GKE cluster</p>
         </li>
        
 </ul>
