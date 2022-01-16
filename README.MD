@@ -14,9 +14,10 @@ project google cloud terraform with docker
 </ul>
 <ul>  
 <p>b-<br>
-    <li>
-        <pre>     Private standard GKE cluster</pre>
+    <pre>  <li>
+        Private standard GKE cluster</pre>
     </li>
+    </pre>
 </ul>
 
 ## Installation-Terraform
