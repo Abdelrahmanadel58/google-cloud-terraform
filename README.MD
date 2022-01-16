@@ -6,20 +6,22 @@ project google cloud terraform with docker
 <h4>1-vpc</h4>
 <h4>2-subnets</h4>
 <ul>
-<p>a-<br>
-    <ul>
-        <li>
-            NAT gateway<br>
-            Private VM</p><br>
-        </li>
-    </ul>
+    <p>a-</p><br>
+        <ul>
+            <li>
+                NAT gateway<br>
+            </li>
+            <li?
+                Private VM</p><br>
+            </li>
+        </ul>
 </ul>
 <ul>  
-<p>b-<br>
-    <pre><li>
-        Private standard GKE cluster</pre>
-    </li>
-    </pre>
+    <p>b-</p><br>
+        <li>
+            Private standard GKE cluster</pre>
+        </li>
+       
 </ul>
 
 ## Installation-Terraform
