@@ -4,15 +4,15 @@
 <ul>
 <p>a-<br>
     <li>
-     NAT gateway<br>
-     Private VM</p><br>
+        NAT gateway<br>
+        Private VM</p><br>
     </li>
 </ul>
 <ul>  
 <p>b-<br>
     <li>
-     Private standard GKE cluster
-</li>
+        Private standard GKE cluster
+    </li>
 </ul>
 
 # Project Google Cloud Plateform
@@ -41,14 +41,16 @@ docker build -t image-name .
 ```
 If you want pull image to docker hub
 
+
+```bash
+docker tag image-id profile-name/repo-name:image-name
+```
 ```bash
 docker push -account-name/repo-name:image-tag
 ```
+
 If you want pull image to gcr
 
-```bash
-docker tag image-tag gcr.io/project-id/image-name
-```
 ```bash
 gcloud auth configure-docker
 ```
