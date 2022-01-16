@@ -1,16 +1,18 @@
 # About Project
-1-vpc
+<h4>1-vpc</h4>
 <h4>2-subnets</h4>
 <ul>
 <li><p>a-<br>
     • NAT gateway<br>
     • Private VM</p><br>
+    </li>
 </ul>
 
-  
-  b-
-    Private standard GKE cluster
-    
+<ul>  
+<li>b-<br>
+    • Private standard GKE cluster
+</li>
+</ul>
 # Project Google Cloud Plateform
 
 project google cloud terraform with docker
