@@ -4,8 +4,8 @@
 <ul>
 <p>a-<br>
     <li>
-    • NAT gateway<br>
-    • Private VM</p><br>
+     NAT gateway<br>
+     Private VM</p><br>
     </li>
 </ul>
 <ul>  
