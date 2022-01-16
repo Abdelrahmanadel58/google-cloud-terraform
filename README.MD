@@ -1,3 +1,7 @@
+# Project Google Cloud Plateform
+
+project google cloud terraform with docker
+
 # About Project
 <h4>1-vpc</h4>
 <h4>2-subnets</h4>
@@ -11,13 +15,9 @@
 <ul>  
 <p>b-<br>
     <li>
-        Private standard GKE cluster
+        <pre>     Private standard GKE cluster</pre>
     </li>
 </ul>
-
-# Project Google Cloud Plateform
-
-project google cloud terraform with docker
 
 ## Installation-Terraform
 
