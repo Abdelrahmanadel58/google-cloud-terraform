@@ -11,7 +11,7 @@
 <ul>  
 <p>b-<br>
     <li>
-    • Private standard GKE cluster
+     Private standard GKE cluster
 </li>
 </ul>
 
