@@ -1,8 +1,8 @@
 # service account for gke
-resource "google_service_account" "gke" {
-  account_id   = "service-acount-for-gke-project"
-  display_name = "service-acount-for-gke-project"
-}
+#resource "google_service_account" "gke" {
+#  account_id   = "service-acount-for-gke-project"
+#  display_name = "service-acount-for-gke-project"
+#}
 
 # resource "google_service_account_iam_binding" "admin-account-iam" {
 #   service_account_id = google_service_account.gke.id
@@ -15,16 +15,16 @@ resource "google_service_account" "gke" {
 #     "serviceAccount:${google_service_account.gke.email}",
 #   ]
 # }
-resource "google_project_iam_binding" "gkeeee" {
- project = var.account_id
- role = "roles/container.admin"
- depends_on = [
- google_service_account.gke
- ]
- members = [
- "serviceAccount:${google_service_account.gke.email}"
- ]
-}
+#resource "google_project_iam_binding" "gkeeee" {
+# project = var.account_id
+# role = "roles/container.admin"
+# depends_on = [
+# google_service_account.gke
+# ]
+# members = [
+# "serviceAccount:${google_service_account.gke.email}"
+# ]
+#}
 
 
 # service account for vm instance
