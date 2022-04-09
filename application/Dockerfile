@@ -1,4 +1,3 @@
-FROM python:3.7
 
 # Install tools required for project
 # Run `docker build --no-cache .` to update dependencies
